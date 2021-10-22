@@ -1,0 +1,75 @@
+.hero {
+    background: url(./../../img/hero-bg.jpg) no-repeat center/cover;
+    padding: 258px 0;
+
+    @include a (tablet-xl) {
+        padding-top: 300px;
+    }
+
+    @include a (tablet) {
+        padding-top: 350px;
+    }
+
+    @include a (mobile) {
+        padding-top: 380px;
+    }
+
+    &__title {
+        font-size: toRem(130);
+        font-family: 'Blogger Sans', sans-serif;
+        font-weight: 700;
+        max-width: 530px;
+        color: #FFD324;
+        text-transform: uppercase;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 0px 29px rgba(255, 249, 94, 0.54);
+        @include a (tablet-xl) {
+            font-size: toRem(80);
+        }
+
+        @include a (tablet) {
+            font-size: toRem(70);
+        }
+
+    }
+
+    &__subtitle {
+        display: block;
+        font-family: 'Blogger Sans', sans-serif;
+        font-size: toRem(60);
+        font-weight: 500;
+        text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3), 0px 0px 29px rgba(255, 249, 94, 0.54);
+        margin-bottom: 30px;
+
+        @include a (tablet) {
+            font-size: toRem(30);
+        }
+    }
+
+    &__descr {
+        font-size: toRem(24);
+        line-height: 130%;
+        color: #fff;
+        max-width: 682px;
+        margin-bottom: 30px;
+
+        @include a (tablet-xl) {
+            font-size: toRem(18);
+        }
+
+        @include a (tablet) {
+            font-size: toRem(14);
+        }
+    }
+
+    &__btn {
+        font-size: toRem(20);
+        font-weight: 500;
+        max-width: 316px;
+        width: 100%;
+        line-height: 55px;
+        background-color:  #FFD324;
+        color: #1A202C;
+        box-shadow: 0px 0px 29px rgba(255, 249, 94, 0.54);
+        border-radius: 30px;
+    }
+}
